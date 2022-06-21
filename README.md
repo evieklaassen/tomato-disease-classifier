@@ -6,6 +6,8 @@ This project was completed for MSDS631: Deep Learning, as part of the Master's i
 
 ## Background
 
+Tomatoes are one of the most common vegetables grown by home gardeners, as well as one of the most widely produced crops in the California agriculture industry. For this reason, understanding tomato diseases and their respective appearances serves many, and was the motivation behind this project. Various diseases can be identified using the leaves of tomato plants. Using PyTorch and other deep learning techniques, we built a classification model to identify what disease a tomato plant may have, based on images of the plant's leaves.
+
 ## Data Sources
 
 We used two datasets of tomato leaf images for this project. The first, and largest, is the [PlantVillage dataset from Kaggle](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset). From this dataset, we used all images of tomato leaves, which had color, greyscale, and segmented iamges with 10 total classes. The second dataset, found [here](https://data.mendeley.com/datasets/369cky7n39/1), consists of color images with 3 classes, and supplemented the PlantVillage dataset. In total, our complete dataset had 54,783 images with 10 classes:
