@@ -23,7 +23,7 @@ We used two datasets of tomato leaf images for this project. The first, and larg
 
 Here are some example images from our dataset:
 
-![Bacterial Spot](https://github.com/evieklaassen/tomato-disease-classifier/blob/main/readme_images/bac_spot.jpg)
+![Bacterial Spot](https://github.com/evieklaassen/tomato-disease-classifier/blob/main/readme_images/bac_spot.JPG)
 
 ![Leaf Mold](/readme_images/mold.jpg)
 
