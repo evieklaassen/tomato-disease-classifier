@@ -39,6 +39,11 @@ Healthy Tomato Leaf:
 
 ![Healthy](https://github.com/evieklaassen/tomato-disease-classifier/blob/main/readme_images/healthy.JPG)
 
+| Bacterial Spot | Leaf Mold           |
+| ![Bacterial Spot](https://github.com/evieklaassen/tomato-disease-classifier/blob/main/readme_images/bac_spot.JPG)        | ![Leaf Mold](https://github.com/evieklaassen/tomato-disease-classifier/blob/main/readme_images/mold.JPG)            |
+| Late Blight    | Healthy Tomato Leaf |
+| ![Late Blight](https://github.com/evieklaassen/tomato-disease-classifier/blob/main/readme_images/late_blight.JPG)       | ![Healthy](https://github.com/evieklaassen/tomato-disease-classifier/blob/main/readme_images/healthy.JPG)           |
+
 ## Preprocessing
 
 We used the [Albumentations](https://albumentations.ai/) package for our data preprocessing. For our candidate models, we needed to resize our images to 224 by 224, and we also performed a series of image augmentations with varying probabilities to expand our dataset and improve the performance of our models.
