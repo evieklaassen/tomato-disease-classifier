@@ -23,13 +23,13 @@ We used two datasets of tomato leaf images for this project. The first, and larg
 
 Here are some example images from our dataset:
 
-!(Bacterial Spot)[/readme_images/bac_spot.jpg]
+![Bacterial Spot](/readme_images/bac_spot.jpg)
 
-!(Leaf Mold)[/readme_images/mold.jpg]
+![Leaf Mold](/readme_images/mold.jpg)
 
-!(Late Blight)[/readme_images/late_blight.jpg]
+![Late Blight](/readme_images/late_blight.jpg)
 
-!(Healthy)[/readme_images/healthy.jpg]
+![Healthy](/readme_images/healthy.jpg)
 
 ## Preprocessing
 
