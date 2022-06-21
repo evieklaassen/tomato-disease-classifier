@@ -21,6 +21,16 @@ We used two datasets of tomato leaf images for this project. The first, and larg
 - Septoria Leaf Spot
 - Healthy
 
+Here are some example images from our dataset:
+
+!(Bacterial Spot)[/readme_images/bac_spot.jpg]
+
+!(Leaf Mold)[/readme_images/mold.jpg]
+
+!(Late Blight)[/readme_images/late_blight.jpg]
+
+!(Healthy)[/readme_images/healthy.jpg]
+
 ## Preprocessing
 
 We used the [Albumentations](https://albumentations.ai/) package for our data preprocessing. For our candidate models, we needed to resize our images to 224 by 224, and we also performed a series of image augmentations with varying probabilities to expand our dataset and improve the performance of our models.
