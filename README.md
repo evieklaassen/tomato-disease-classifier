@@ -29,7 +29,7 @@ Bacterial Spot:
 
 Leaf Mold:
 
-![Leaf Mold](https://github.com/evieklaassen/tomato-disease-classifier/blob/main/readme_images/leaf_mold.JPG)
+![Leaf Mold](https://github.com/evieklaassen/tomato-disease-classifier/blob/main/readme_images/mold.JPG)
 
 Late Blight:
 
