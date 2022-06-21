@@ -23,13 +23,21 @@ We used two datasets of tomato leaf images for this project. The first, and larg
 
 Here are some example images from our dataset:
 
+Bacterial Spot:
+
 ![Bacterial Spot](https://github.com/evieklaassen/tomato-disease-classifier/blob/main/readme_images/bac_spot.JPG)
 
-![Leaf Mold](/readme_images/mold.jpg)
+Leaf Mold:
 
-![Late Blight](/readme_images/late_blight.jpg)
+![Leaf Mold](https://github.com/evieklaassen/tomato-disease-classifier/blob/main/readme_images/leaf_mold.JPG)
 
-![Healthy](/readme_images/healthy.jpg)
+Late Blight:
+
+![Late Blight](https://github.com/evieklaassen/tomato-disease-classifier/blob/main/readme_images/late_blight.JPG)
+
+Healthy Tomato Leaf:
+
+![Healthy](https://github.com/evieklaassen/tomato-disease-classifier/blob/main/readme_images/healthy.JPG)
 
 ## Preprocessing
 
@@ -48,6 +56,10 @@ For our model selection process, we experimented with 3 different pre-trained mo
 #### Model Performance
 
 Below are the validation loss (cross entropy loss) and accuracy for each of our models:
+
+![Validation Loss](https://github.com/evieklaassen/tomato-disease-classifier/blob/main/readme_images/val_loss.png)
+
+![Validation Accuracy](https://github.com/evieklaassen/tomato-disease-classifier/blob/main/readme_images/val_acc.png)
 
 ### Final Model 
 
