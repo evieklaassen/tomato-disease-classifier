@@ -55,8 +55,11 @@ VGG-16 is a convolutional neural network that is 16 layers deep. The fine-tuned 
 
 #### GoogleNet
 
+GoogLeNet is a 22-layer deep convolutional neural network based on the Inception architecture. By using the Inception modules, the network can choose between multiple convolution filter sizes in each block. We used a pretrained version of the network trained on ImageNet for our disease classification task. At the end of 5 epochs, we achieved a train accuracy of 98.14% and a valid accuracy of 96.40%.
 
 #### Partially Frozen ResNet18
+
+ResNet-18 is a convolutional neural network that is 18 layers deep. We loaded a pretrained version of the network and we replaced the final classifier layer with a linear layer going from 512 features to 10 features for our classification task. We "froze" the model by turning off gradients for all the parameters. WE then re-initialized the last layer for our task. At the end of 5 epochs, we achieved a train accuracy of 85.84% and a valid accuracy of 85.86%.
 
 #### Model Performance
 
@@ -66,4 +69,8 @@ Below are the validation loss (cross entropy loss) and accuracy for each of our 
 
 ### Final Model 
 
+The results above show that Fine-Tuned VGG16 has the best performance and is therefore our chosen final model. The model is trained on our final train dataset (train+val) and evaluated on the test dataset (80/20 final train/test split). At the end of 5 epochs, we achieved a train accuracy of 99.87% and a valid accuracy of 98.37%. 
+
 ## Future Directions
+
+With more time, we would explore where misclassifications are happening (i.e. what classes are frequently confused with others due to high leaf pattern variation). We would also explore how to integrate the model with built in cell phone cameras to provide real time tomato leaf disease detection and identification. We expect that our model can help our home gardeners plant the best, disease-free tomatoes :) 
