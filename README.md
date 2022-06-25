@@ -51,7 +51,10 @@ For our model selection process, we experimented with 3 different pre-trained mo
 
 #### Fine-Tuned VGG16
 
+VGG-16 is a convolutional neural network that is 16 layers deep. The fine-tuned model classifies 10 classes(of diseases) instead of the 1000 categories it was trained on. To do so, we replaced the final classifier layer with a linear layer going from 4096 features to 10 features. To finetune the model, we trained different layers at different learning rates (1e-4, 5e-4, 1e-3). The later the layer, the more we adjusted the features. At the end of 5 epochs, we achieved a train accuracy of 99.39% and a valid accuracy of 97.20%.
+
 #### GoogleNet
+
 
 #### Partially Frozen ResNet18
 
