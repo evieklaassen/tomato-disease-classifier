@@ -43,7 +43,7 @@ Healthy Tomato Leaf:
 
 ## Preprocessing
 
-We used the [Albumentations](https://albumentations.ai/) package for our data preprocessing. For our candidate models, we needed to resize our images to 224 by 224, and we also performed a series of image augmentations with varying probabilities to expand our dataset and improve the performance of our models.
+We used the [Albumentations](https://albumentations.ai/) package for our data preprocessing. For our candidate models, we needed to resize our images to 224 by 224, and we also performed a series of image augmentations with varying probabilities to expand our dataset and improve the performance of our models. We explored spatial transformations (i.e. HorizontalFlip, VerticalFlip, and Rotate) and pixel-level transformations (i.e. RandomBrightnessContrast, Blur, and GaussNoise).
 
 ## Candidate Models
 
