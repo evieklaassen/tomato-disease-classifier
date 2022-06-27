@@ -51,15 +51,15 @@ For our model selection process, we experimented with 3 different pre-trained mo
 
 #### Fine-Tuned VGG16
 
-VGG-16 is a convolutional neural network that is 16 layers deep. The fine-tuned model classifies 10 classes(of diseases) instead of the 1000 categories it was trained on. To do so, we replaced the final classifier layer with a linear layer going from 4096 features to 10 features. To finetune the model, we trained different layers at different learning rates (1e-4, 5e-4, 1e-3). The later the layer, the more we adjusted the features. At the end of 5 epochs, we achieved a train accuracy of 99.39% and a valid accuracy of 97.20%.
+VGG-16 is a convolutional neural network that is 16 layers deep. The fine-tuned model classifies 10 classes(of diseases) instead of the 1000 categories it was trained on. To do so, we replaced the final classifier layer with a linear layer going from 4096 features to 10 features. To finetune the model, we trained different layers at different learning rates (1e-4, 5e-4, 1e-3). The later the layer, the more we adjusted the features. At the end of 5 epochs, we achieved a train accuracy of 99.39% and a validation accuracy of 97.20%.
 
 #### GoogleNet
 
-GoogLeNet is a 22-layer deep convolutional neural network based on the Inception architecture. By using the Inception modules, the network can choose between multiple convolution filter sizes in each block. We used a pretrained version of the network trained on ImageNet for our disease classification task. At the end of 5 epochs, we achieved a train accuracy of 98.14% and a valid accuracy of 96.40%.
+GoogLeNet is a 22-layer deep convolutional neural network based on the Inception architecture. By using the Inception modules, the network can choose between multiple convolution filter sizes in each block. We used a pretrained version of the network trained on ImageNet for our disease classification task. At the end of 5 epochs with a learning rate of 0.001, we achieved a train accuracy of 98.14% and a validation accuracy of 96.40%.
 
 #### Partially Frozen ResNet18
 
-ResNet-18 is a convolutional neural network that is 18 layers deep. We loaded a pretrained version of the network and we replaced the final classifier layer with a linear layer going from 512 features to 10 features for our classification task. We "froze" the model by turning off gradients for all the parameters. WE then re-initialized the last layer for our task. At the end of 5 epochs, we achieved a train accuracy of 85.84% and a valid accuracy of 85.86%.
+ResNet-18 is a convolutional neural network that is 18 layers deep. We loaded a pretrained version of the network and we replaced the final classifier layer with a linear layer going from 512 features to 10 features for our classification task. We "froze" the model by turning off gradients for all the parameters. We then re-initialized the last layer for our task. At the end of 5 epochs with a learning rate of 0.001, we achieved a train accuracy of 85.84% and a validation accuracy of 85.86%.
 
 #### Model Performance
 
@@ -69,7 +69,7 @@ Below are the validation loss (cross entropy loss) and accuracy for each of our 
 
 ### Final Model 
 
-The results above show that Fine-Tuned VGG16 has the best performance and is therefore our chosen final model. The model is trained on our final train dataset (train+val) and evaluated on the test dataset (80/20 final train/test split). At the end of 5 epochs, we achieved a train accuracy of 99.87% and a valid accuracy of 98.37%. 
+The results above show that Fine-Tuned VGG16 has the best performance and is therefore our chosen final model. The model is trained on our final train dataset (train + validation) and evaluated on the test dataset (80/20 final train/test split). At the end of 5 epochs, we achieved a train accuracy of 99.87% and a validation accuracy of 98.37%. 
 
 ## Future Directions
 
