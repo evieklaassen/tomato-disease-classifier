@@ -10,7 +10,7 @@ Tomatoes are one of the most common vegetables grown by home gardeners, as well 
 
 ## Data Sources
 
-We used two datasets of tomato leaf images for this project. The first, and largest, is the [PlantVillage dataset from Kaggle](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset). From this dataset, we used all images of tomato leaves, which had color, greyscale, and segmented iamges with 10 total classes. The second dataset, found [here](https://data.mendeley.com/datasets/369cky7n39/1), consists of color images with 3 classes, and supplemented the PlantVillage dataset. In total, our complete dataset had 54,783 images with 10 classes:
+We used two datasets of tomato leaf images for this project. The first, and largest, is the [PlantVillage dataset from Kaggle](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset). From this dataset, we used all images of tomato leaves, which had color, greyscale, and segmented images with 10 total classes. The second dataset, found [here](https://data.mendeley.com/datasets/369cky7n39/1), consists of color images with 3 classes, and supplemented the PlantVillage dataset. In total, our complete dataset had 54,783 images with 10 classes:
 
 - Target Spot
 - Tomato Mosaic Virus
